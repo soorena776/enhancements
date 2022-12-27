@@ -463,7 +463,7 @@ This policy parameter resource limits deployments to a max of 3 repliacas in all
 namespaces in the test environment.
 
 An admission policy may have multiple bindings. To bind all other environments
-environment to have a maxReplicas limit of 100, create another `PolicyBinding`:
+to have a maxReplicas limit of 100, create another `PolicyBinding`:
 
 ```yaml
 apiVersion: aadmissionregistration.k8s.io/v1alpha1
@@ -667,7 +667,7 @@ For CEL expressions, the primary benefits of match criteria are:
 
 - Match criteria establishes bounds on what sort of admission requests the CEL
   expressions must consider. The CEL expressions can be written knowing that the
-  match criteria has filtered out requests that is does not need to consider.
+  match criteria has filtered out requests that does not need to consider.
 - Match criteria is available on policy bindings and allows the binding author
   to further constrain what resources the particular binding applies to.
 
